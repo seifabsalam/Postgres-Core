@@ -18,22 +18,31 @@ A lightweight Java library that eliminates the boilerplate of bootstrapping a Po
 
 ## Installation
 
-Add the following dependency to your `pom.xml`:
+This library is distributed via **[JitPack](https://jitpack.io/#seifabsalam/Postgres-Core)**.
+
+### Step 1 — Add the JitPack repository to your `pom.xml`
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+```
+
+### Step 2 — Add the dependency
 
 ```xml
 <dependency>
-    <groupId>com.telecom</groupId>
-    <artifactId>postgres-core</artifactId>
-    <version>1.0.0</version>
+    <groupId>com.github.seifabsalam</groupId>
+    <artifactId>Postgres-Core</artifactId>
+    <version>v1.0.0</version>
 </dependency>
 ```
 
-> Since this library is not published to Maven Central, install it locally first:
-> ```bash
-> git clone https://github.com/<your-username>/postgres-core.git
-> cd postgres-core
-> mvn clean install
-> ```
+> **Note:** JitPack uses `com.github.seifabsalam` as the `groupId` regardless of what is declared in `pom.xml`.
+> Replace `v1.0.0` with any [released tag](https://github.com/seifabsalam/Postgres-Core/tags) or use `master-SNAPSHOT` to track the latest commit.
 
 ## Usage
 
