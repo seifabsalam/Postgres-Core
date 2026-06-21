@@ -1,0 +1,32 @@
+# Build output
+target/
+*.class
+
+# Credentials — never commit these
+src/main/resources/db.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/
+nb-configuration.xml
+manifest.mf
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+
+# Logs
+*.log
