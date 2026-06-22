@@ -40,10 +40,12 @@ public class Database implements Closeable {
             config.setPassword(password);
 
             // Connection pool defaults
-            config.setMaximumPoolSize(2);
+            config.setMaximumPoolSize(10);
             config.setMinimumIdle(0);
             config.setIdleTimeout(10000);
-            config.setConnectionTimeout(20000);
+            config.setConnectionTimeout(30000);
+            config.setMaxLifetime(240000);
+            config.setInitializationFailTimeout(0);
 
             this.dataSource = new HikariDataSource(config);
         } catch (Exception e) {
