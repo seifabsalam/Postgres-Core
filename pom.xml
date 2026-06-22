@@ -17,7 +17,7 @@
         <dependency>
             <groupId>org.jooq</groupId>
             <artifactId>jooq</artifactId>
-            <version>3.15.11</version>
+            <version>3.19.11</version>
         </dependency>
 
         <!-- HikariCP Connection Pool -->
